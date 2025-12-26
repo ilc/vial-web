@@ -30,4 +30,12 @@ echo "${PYQT5SIP_HASH} PyQt5_sip-${PYQT5SIP_VER}.tar.gz" | sha256sum --check
 wget https://github.com/ilc/vial-deps/releases/download/v1/PyQt5-${PYQT5_VER}.tar.gz -O PyQt5-${PYQT5_VER}.tar.gz
 echo "${PYQT5_HASH} PyQt5-${PYQT5_VER}.tar.gz" | sha256sum --check
 
+# QtPy
+wget https://github.com/ilc/vial-deps/releases/download/v1/QtPy-${QTPY_VER}-py3-none-any.whl -O QtPy-${QTPY_VER}-py3-none-any.whl
+echo "${QTPY_HASH} QtPy-${QTPY_VER}-py3-none-any.whl" | sha256sum --check
+
+# packaging
+wget https://github.com/ilc/vial-deps/releases/download/v1/packaging-${PACKAGING_VER}-py3-none-any.whl -O packaging-${PACKAGING_VER}-py3-none-any.whl
+echo "${PACKAGING_HASH} packaging-${PACKAGING_VER}-py3-none-any.whl" | sha256sum --check
+
 echo "All OK. Now run ./build-deps.sh"

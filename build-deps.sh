@@ -120,5 +120,8 @@ popd
 
 popd
 
+# Extract pure Python deps for web build
+unzip -q ../sources/QtPy-${QTPY_VER}-py3-none-any.whl -d .
+unzip -q ../sources/packaging-${PACKAGING_VER}-py3-none-any.whl -d .
 
 cd ..
